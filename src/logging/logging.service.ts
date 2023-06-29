@@ -11,5 +11,7 @@ export class LoggingService {
 
   logData(data: string) {
     // TODO save data on db using loggingRepository
+    const log = this.loggingRepository.create({ log: data });
+    return this.loggingRepository.save(log);
   }
 }
