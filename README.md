@@ -29,6 +29,7 @@
 ## Installation
 
 ```bash
+$ cp .env.example .env
 $ npm install
 ```
 
@@ -36,6 +37,8 @@ $ npm install
 
 ```bash
 # development
+$ cp .env.example .env
+
 $ npm run start
 
 # watch mode
@@ -49,6 +52,8 @@ $ npm run start:prod
 
 ```bash
 # unit tests
+$ cp .env.example .env
+
 $ npm run test
 
 # e2e tests
