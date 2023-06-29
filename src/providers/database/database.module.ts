@@ -28,7 +28,7 @@ import { Logging } from 'src/logging/entities/logging.entity';
           synchronize: true,
         };
       },
-      // inject: [ConfigService],
+      inject: [ConfigService],
     } as TypeOrmModuleAsyncOptions),
   ],
 })
