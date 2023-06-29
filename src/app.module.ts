@@ -5,12 +5,13 @@ import { ConfigModule } from '@nestjs/config';
 import loggingConfig from './config/logging.config';
 import { LoggingModule } from './logging/logging.module';
 import { DatabaseModule } from './providers/database/database.module';
+import databaseConfig from './config/database.config';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      load: [loggingConfig],
+      load: [loggingConfig, databaseConfig],
       envFilePath: ['.env'],
     }),
     DatabaseModule,
